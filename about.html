@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>About | Nivaas Property Advisors</title>
+  <meta name="description" content="Meet your property consultant for Pune, Wakad, Tathawade, Hinjawadi and Punawale.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (fine for a template/prototype; see README for a production build) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-mist font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+    <span class="scroll-progress" aria-hidden="true"></span>
+    <nav class="mx-auto flex h-[64px] max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Nivaas Property Advisors, home">
+        <span class="brand-mark flex h-10 w-10 items-center justify-center rounded-xl bg-pine text-white"><i data-lucide="house" class="h-5 w-5"></i></span>
+        <span class="font-display text-lg font-semibold leading-none tracking-tight">Nivaas
+          <span class="block pt-1 text-[11px] font-medium tracking-wide text-ink/60">Property Advisors</span>
+        </span>
+      </a>
+      <ul class="hidden items-center gap-1 lg:flex">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link" aria-current="page">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" data-whatsapp class="btn btn-wa hidden sm:inline-flex"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a>
+        <button id="menu-toggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-white lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="icon-open h-5 w-5"></i>
+          <i data-lucide="x" class="icon-close hidden h-5 w-5"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu lg:hidden" data-open="false" hidden>
+      <ul class="mx-auto max-w-7xl space-y-1 px-5 pb-5 pt-1 sm:px-8">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="about.html" class="mobile-link" aria-current="page">About</a></li>
+        <li><a href="services.html" class="mobile-link">Services</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="pt-3"><a href="contact.html" data-whatsapp class="btn btn-wa btn-lg w-full"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="wrap banner-inner">
+        <nav class="crumbs hero-in hero-d1" aria-label="Breadcrumb"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span aria-current="page">About</span></nav>
+        <h1 id="page-title" class="hero-in hero-d2">One consultant, from first call to final handover.</h1>
+        <p class="hero-in hero-d3">Personal property guidance built on local knowledge and clear communication.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap split">
+        <div class="about-media" data-reveal="left">
+          <div class="about-frame"><img src="assets/photo-6.jpg" alt="Detached home with a landscaped front garden" width="1200" height="900"></div>
+          <!-- TODO: replace this image with a portrait of the consultant -->
+          <div class="float-note"><span class="icon-tile"><i data-lucide="award" class="h-5 w-5"></i></span><p>Local expert<small>Pune and nearby areas</small></p></div>
+        </div>
+        <div class="about-text" data-reveal="right">
+          <span class="eyebrow">About me</span>
+          <h2 class="sec-title">Hello, I am your property consultant.</h2>
+          <p>I work one-on-one with buyers, sellers and tenants. From finding the right property to coordinating site visits and supporting negotiation, you get personal guidance at every step.</p>
+          <p>Write two or three sentences here about your background, how long you have worked in Pune real estate and what clients value most about working with you.</p>
+          <div class="about-actions"><a href="contact.html" data-whatsapp class="btn btn-wa btn-lg"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a><a href="projects.html" class="btn btn-outline btn-lg">See projects <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-alt">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Values</span><h2 class="sec-title">How I work</h2></div>
+      </div>
+        <div class="val-grid">
+          <div class="vcard" data-reveal data-delay="0"><span class="vcard-ico"><i data-lucide="heart-handshake" class="h-5 w-5"></i></span><h3>Honest advice</h3><p>I tell you what I would do in your place, even when it means saying no to a deal.</p></div>
+          <div class="vcard" data-reveal data-delay="1"><span class="vcard-ico"><i data-lucide="clock" class="h-5 w-5"></i></span><h3>Respect for your time</h3><p>Shortlists instead of endless links, and visits grouped so one day does the work of five.</p></div>
+          <div class="vcard" data-reveal data-delay="2"><span class="vcard-ico"><i data-lucide="scale" class="h-5 w-5"></i></span><h3>Clear paperwork</h3><p>Agreements, registration and documents explained in plain language before you sign.</p></div>
+          <div class="vcard" data-reveal data-delay="3"><span class="vcard-ico"><i data-lucide="sprout" class="h-5 w-5"></i></span><h3>Long-term view</h3><p>Many clients come back for their next property or send a friend. That is the aim.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Journey</span><h2 class="sec-title">The story so far</h2><p class="sec-sub">Replace these milestones with your own timeline.</p></div>
+      </div>
+        <ol class="journey">
+          <li class="j-item" data-reveal data-delay="0"><span class="j-tag">Year one</span><h3>Started in Wakad</h3><p>Add the year and the story of how you began helping people find homes.</p></li>
+          <li class="j-item" data-reveal data-delay="1"><span class="j-tag">Growing</span><h3>Expanded to Hinjawadi and Tathawade</h3><p>Describe the areas and the kinds of property you started handling.</p></li>
+          <li class="j-item" data-reveal data-delay="2"><span class="j-tag">Today</span><h3>Pune, Wakad, Tathawade, Hinjawadi, Punawale</h3><p>Mention the number of families helped and the types of deals closed.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY ME ============ -->
+    <section class="sec sec-alt">
+      <div class="wrap">
+        <div class="why-panel" data-reveal="zoom">
+          <div class="why-head">
+            <div class="relative"><span class="eyebrow">Why me</span><h2 class="sec-title">Why people work with me</h2></div>
+            <p class="why-lead">Property decisions are big. You should know who you are dealing with and what happens next.</p>
+          </div>
+          <ul class="why-grid">
+            <li class="why-card" data-tilt data-reveal data-delay="0"><span class="why-ico"><i data-lucide="user-round-check" class="h-5 w-5"></i></span><h3>One point of contact</h3><p>Everything is handled by one person who knows your requirements.</p></li>
+            <li class="why-card" data-tilt data-reveal data-delay="1"><span class="why-ico"><i data-lucide="eye" class="h-5 w-5"></i></span><h3>Transparent communication</h3><p>Straightforward updates on every option and every step.</p></li>
+            <li class="why-card" data-tilt data-reveal data-delay="2"><span class="why-ico"><i data-lucide="map-pinned" class="h-5 w-5"></i></span><h3>Local market knowledge</h3><p>Familiar with the neighbourhoods around Wakad, Tathawade, Hinjawadi and Punawale.</p></li>
+            <li class="why-card" data-tilt data-reveal data-delay="3"><span class="why-ico"><i data-lucide="handshake" class="h-5 w-5"></i></span><h3>Support through negotiation</h3><p>Help in the conversations that decide the final terms.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="sec cta-sec">
+      <div class="wrap">
+        <div class="cta-band" data-reveal="zoom">
+          <div class="cta-text">
+            <h2>Ready to find your next property?</h2>
+            <p>Send a message on WhatsApp and get a reply with options that fit your budget and area.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" data-whatsapp class="btn btn-wa btn-lg"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> Chat on WhatsApp</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg"><i data-lucide="send" class="h-4 w-4"></i> Send an enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap f-grid">
+      <div class="f-col f-brand">
+        <a href="index.html" class="f-logo"><span class="f-logo-mark"><i data-lucide="house" class="h-5 w-5"></i></span><span>Nivaas Property Advisors</span></a>
+        <p>Personal property guidance for buying, selling and renting in Pune and nearby areas.</p>
+      </div>
+      <nav class="f-col" aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="f-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i data-lucide="phone"></i><a href="tel:+910000000000" class="footer-link">+91 00000 00000</a></li>
+          <li><i data-lucide="message-circle"></i><a href="contact.html" data-whatsapp class="footer-link">WhatsApp</a></li>
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com" class="footer-link">hello@example.com</a></li>
+          <li><i data-lucide="map-pin"></i><span>Pune, Maharashtra</span></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h3>Follow</h3>
+        <ul class="f-social">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Instagram"><i data-lucide="instagram" class="h-5 w-5"></i></a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Facebook"><i data-lucide="facebook" class="h-5 w-5"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn"><i data-lucide="linkedin" class="h-5 w-5"></i></a></li>
+        </ul>
+        <!-- TODO: replace the three social links with real profile URLs -->
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap"><span>&copy; <span class="js-year">2026</span> Nivaas Property Advisors. All rights reserved.</span><span>Pune, Maharashtra</span></div>
+    </div>
+  </footer>
+
+  <a href="contact.html" data-whatsapp class="fab-wa" aria-label="Chat on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg></a>
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

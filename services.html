@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Services | Nivaas Property Advisors</title>
+  <meta name="description" content="Buying, selling, renting and investment guidance in Pune.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (fine for a template/prototype; see README for a production build) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-mist font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+    <span class="scroll-progress" aria-hidden="true"></span>
+    <nav class="mx-auto flex h-[64px] max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Nivaas Property Advisors, home">
+        <span class="brand-mark flex h-10 w-10 items-center justify-center rounded-xl bg-pine text-white"><i data-lucide="house" class="h-5 w-5"></i></span>
+        <span class="font-display text-lg font-semibold leading-none tracking-tight">Nivaas
+          <span class="block pt-1 text-[11px] font-medium tracking-wide text-ink/60">Property Advisors</span>
+        </span>
+      </a>
+      <ul class="hidden items-center gap-1 lg:flex">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link" aria-current="page">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" data-whatsapp class="btn btn-wa hidden sm:inline-flex"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a>
+        <button id="menu-toggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-white lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="icon-open h-5 w-5"></i>
+          <i data-lucide="x" class="icon-close hidden h-5 w-5"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu lg:hidden" data-open="false" hidden>
+      <ul class="mx-auto max-w-7xl space-y-1 px-5 pb-5 pt-1 sm:px-8">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link" aria-current="page">Services</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="pt-3"><a href="contact.html" data-whatsapp class="btn btn-wa btn-lg w-full"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="wrap banner-inner">
+        <nav class="crumbs hero-in hero-d1" aria-label="Breadcrumb"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span aria-current="page">Services</span></nav>
+        <h1 id="page-title" class="hero-in hero-d2">Property help for every stage</h1>
+        <p class="hero-in hero-d3">Buying your first home, selling an existing one or looking for a rental, you get the same personal attention.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="svc-grid cols-3">
+          <a href="contact.html" class="svc-card" data-reveal>
+            <span class="svc-icon"><i data-lucide="house" class="h-5 w-5"></i></span>
+            <h3>Buying a property</h3>
+            <p>Shortlists matched to your budget and area, site visits, and support through negotiation.</p>
+            <ul class="svc-list"><li><i data-lucide="check" class="h-4 w-4"></i>Budget and area shortlist</li><li><i data-lucide="check" class="h-4 w-4"></i>Site visits arranged for you</li><li><i data-lucide="check" class="h-4 w-4"></i>Negotiation support</li></ul>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="1">
+            <span class="svc-icon"><i data-lucide="tag" class="h-5 w-5"></i></span>
+            <h3>Selling a property</h3>
+            <p>Present your property well, reach genuine buyers and coordinate viewings without the back and forth.</p>
+            <ul class="svc-list"><li><i data-lucide="check" class="h-4 w-4"></i>Pricing guidance</li><li><i data-lucide="check" class="h-4 w-4"></i>Buyer screening</li><li><i data-lucide="check" class="h-4 w-4"></i>Viewing coordination</li></ul>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="2">
+            <span class="svc-icon"><i data-lucide="key-round" class="h-5 w-5"></i></span>
+            <h3>Renting a property</h3>
+            <p>Find a rental that suits your commute and lifestyle, whether you are a tenant or an owner.</p>
+            <ul class="svc-list"><li><i data-lucide="check" class="h-4 w-4"></i>Tenant and owner matching</li><li><i data-lucide="check" class="h-4 w-4"></i>Rent agreement help</li><li><i data-lucide="check" class="h-4 w-4"></i>Move-in coordination</li></ul>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal>
+            <span class="svc-icon"><i data-lucide="trending-up" class="h-5 w-5"></i></span>
+            <h3>Investment guidance</h3>
+            <p>Talk through locations and property types before you commit, with local market context.</p>
+            <ul class="svc-list"><li><i data-lucide="check" class="h-4 w-4"></i>Area comparison</li><li><i data-lucide="check" class="h-4 w-4"></i>Rental yield basics</li><li><i data-lucide="check" class="h-4 w-4"></i>Resale outlook</li></ul>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="1">
+            <span class="svc-icon"><i data-lucide="file-check-2" class="h-5 w-5"></i></span>
+            <h3>Paperwork support</h3>
+            <p>Understand agreements, registration steps and the documents you need, in plain language.</p>
+            <ul class="svc-list"><li><i data-lucide="check" class="h-4 w-4"></i>Document checklist</li><li><i data-lucide="check" class="h-4 w-4"></i>Registration steps</li><li><i data-lucide="check" class="h-4 w-4"></i>Agreement review pointers</li></ul>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="2">
+            <span class="svc-icon"><i data-lucide="landmark" class="h-5 w-5"></i></span>
+            <h3>Home loan assistance</h3>
+            <p>Get pointed to the right questions to ask lenders and the papers they will want from you.</p>
+            <ul class="svc-list"><li><i data-lucide="check" class="h-4 w-4"></i>Eligibility basics</li><li><i data-lucide="check" class="h-4 w-4"></i>Document preparation</li><li><i data-lucide="check" class="h-4 w-4"></i>Lender introductions</li></ul>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="sec sec-alt">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Process</span><h2 class="sec-title">How it works</h2><p class="sec-sub">A simple path from your first message to a decision you feel good about.</p></div>
+      </div>
+        <ol class="steps">
+          <li class="step" data-reveal><div class="step-top"><span class="step-ico"><i data-lucide="message-square-text" class="h-5 w-5"></i></span><span class="step-dot">1</span></div><h3>Share what you need</h3><p>Tell me your budget, preferred areas and the kind of property you want.</p></li>
+          <li class="step" data-reveal data-delay="1"><div class="step-top"><span class="step-ico"><i data-lucide="list-checks" class="h-5 w-5"></i></span><span class="step-dot">2</span></div><h3>Get a shortlist</h3><p>I select options that fit, so you compare a few good ones instead of dozens.</p></li>
+          <li class="step" data-reveal data-delay="2"><div class="step-top"><span class="step-ico"><i data-lucide="map-pinned" class="h-5 w-5"></i></span><span class="step-dot">3</span></div><h3>Visit the sites</h3><p>I coordinate visits at times that work for you and your family.</p></li>
+          <li class="step" data-reveal data-delay="3"><div class="step-top"><span class="step-ico"><i data-lucide="handshake" class="h-5 w-5"></i></span><span class="step-dot">4</span></div><h3>Negotiate and decide</h3><p>I support the negotiation so you can make the final call with confidence.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="sec">
+      <div class="wrap faq-wrap">
+        <div data-reveal="left"><span class="eyebrow">FAQ</span><h2 class="sec-title">Common questions</h2><p class="sec-sub">Cannot find your answer? Ask me directly on WhatsApp.</p></div>
+        <div class="faq-list" data-reveal="right">
+<details class="faq"><summary>How do I book a site visit?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Send an enquiry or message me on WhatsApp with the projects you like. We will agree on a time that suits you.</p></details>
+<details class="faq"><summary>Which areas do you cover?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Pune, Wakad, Tathawade, Hinjawadi and Punawale.</p></details>
+<details class="faq"><summary>Can you help me sell or rent out my property?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Yes. Share the location and type of property on the contact page and I will get back to you with the next steps.</p></details>
+<details class="faq"><summary>Do you charge buyers or tenants?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Add your own fee structure here. Being clear about fees early builds trust.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="sec cta-sec">
+      <div class="wrap">
+        <div class="cta-band" data-reveal="zoom">
+          <div class="cta-text">
+            <h2>Ready to find your next property?</h2>
+            <p>Send a message on WhatsApp and get a reply with options that fit your budget and area.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" data-whatsapp class="btn btn-wa btn-lg"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> Chat on WhatsApp</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg"><i data-lucide="send" class="h-4 w-4"></i> Send an enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap f-grid">
+      <div class="f-col f-brand">
+        <a href="index.html" class="f-logo"><span class="f-logo-mark"><i data-lucide="house" class="h-5 w-5"></i></span><span>Nivaas Property Advisors</span></a>
+        <p>Personal property guidance for buying, selling and renting in Pune and nearby areas.</p>
+      </div>
+      <nav class="f-col" aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="f-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i data-lucide="phone"></i><a href="tel:+910000000000" class="footer-link">+91 00000 00000</a></li>
+          <li><i data-lucide="message-circle"></i><a href="contact.html" data-whatsapp class="footer-link">WhatsApp</a></li>
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com" class="footer-link">hello@example.com</a></li>
+          <li><i data-lucide="map-pin"></i><span>Pune, Maharashtra</span></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h3>Follow</h3>
+        <ul class="f-social">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Instagram"><i data-lucide="instagram" class="h-5 w-5"></i></a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Facebook"><i data-lucide="facebook" class="h-5 w-5"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn"><i data-lucide="linkedin" class="h-5 w-5"></i></a></li>
+        </ul>
+        <!-- TODO: replace the three social links with real profile URLs -->
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap"><span>&copy; <span class="js-year">2026</span> Nivaas Property Advisors. All rights reserved.</span><span>Pune, Maharashtra</span></div>
+    </div>
+  </footer>
+
+  <a href="contact.html" data-whatsapp class="fab-wa" aria-label="Chat on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg></a>
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

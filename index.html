@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Nivaas Property Advisors | Buy, Sell and Rent Property in Pune</title>
+  <meta name="description" content="One-on-one guidance for buying, selling and renting property in Pune, Wakad, Tathawade, Hinjawadi and Punawale.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (fine for a template/prototype; see README for a production build) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-mist font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+    <span class="scroll-progress" aria-hidden="true"></span>
+    <nav class="mx-auto flex h-[64px] max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Nivaas Property Advisors, home">
+        <span class="brand-mark flex h-10 w-10 items-center justify-center rounded-xl bg-pine text-white"><i data-lucide="house" class="h-5 w-5"></i></span>
+        <span class="font-display text-lg font-semibold leading-none tracking-tight">Nivaas
+          <span class="block pt-1 text-[11px] font-medium tracking-wide text-ink/60">Property Advisors</span>
+        </span>
+      </a>
+      <ul class="hidden items-center gap-1 lg:flex">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" data-whatsapp class="btn btn-wa hidden sm:inline-flex"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a>
+        <button id="menu-toggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-white lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="icon-open h-5 w-5"></i>
+          <i data-lucide="x" class="icon-close hidden h-5 w-5"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu lg:hidden" data-open="false" hidden>
+      <ul class="mx-auto max-w-7xl space-y-1 px-5 pb-5 pt-1 sm:px-8">
+        <li><a href="index.html" class="mobile-link" aria-current="page">Home</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link">Services</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="pt-3"><a href="contact.html" data-whatsapp class="btn btn-wa btn-lg w-full"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- COMPACT CINEMATIC HERO -->
+    <section id="home" class="lux-hero">
+      <div class="lux-hero-bg" aria-hidden="true"></div>
+      <div class="lux-grain" aria-hidden="true"></div>
+      <div class="lux-hero-inner">
+        <div class="lux-hero-copy">
+          <p class="lux-kicker"><span></span> REAL ESTATE, REIMAGINED</p>
+          <h1>Find a place<br>to <em>belong.</em></h1>
+          <p class="lux-intro">Thoughtfully selected homes. Exceptional neighbourhoods. Personal guidance at every step of your property journey.</p>
+          <div class="lux-actions">
+            <a href="projects.html" class="lux-cta">Explore properties <span>↗</span></a>
+            <a href="contact.html" class="lux-text-link">Book a private visit <span>↗</span></a>
+          </div>
+        </div>
+        <div class="lux-hero-foot">
+          <div class="lux-location"><i data-lucide="map-pin"></i><span>LOCAL EXPERTISE</span><b>Pune &amp; its growing neighbourhoods</b></div>
+          <div class="lux-review"><strong>250<span>+</span></strong><span>families guided<br>towards their next chapter</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section>
+      <div class="wrap">
+        <div class="kpi-row">
+          <div class="kpi" data-reveal><p class="kpi-num"><span data-count="250" data-suffix="+">0</span></p><p class="kpi-label">Families helped</p><p class="kpi-note">Replace with your real number</p></div>
+          <div class="kpi" data-reveal data-delay="1"><p class="kpi-num"><span data-count="8" data-suffix="+">0</span></p><p class="kpi-label">Years in Pune real estate</p><p class="kpi-note">Replace with your real number</p></div>
+          <div class="kpi" data-reveal data-delay="2"><p class="kpi-num"><span data-count="5">0</span></p><p class="kpi-label">Areas covered</p><p class="kpi-note">Wakad to Punawale</p></div>
+          <div class="kpi" data-reveal data-delay="3"><p class="kpi-num"><span data-count="100" data-suffix="%">0</span></p><p class="kpi-label">Personal attention</p><p class="kpi-note">One consultant, every step</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT TEASER ============ -->
+    <section class="sec">
+      <div class="wrap split">
+        <div class="about-media" data-reveal="left"><div class="about-frame"><img src="assets/photo-6.jpg" alt="Detached home with a landscaped front garden" width="1200" height="900" loading="lazy"></div></div>
+        <div class="about-text" data-reveal="right">
+          <span class="eyebrow">About me</span>
+          <h2 class="sec-title">One consultant, from first call to final handover.</h2>
+          <p>I work one-on-one with buyers, sellers and tenants. From finding the right property to coordinating site visits and supporting negotiation, you get personal guidance at every step.</p>
+          <ul class="feature-list">
+            <li class="feature-row"><span class="icon-tile"><i data-lucide="user-check" class="h-5 w-5"></i></span><div><h3>Personal guidance</h3><p>You deal with one person who knows your requirements.</p></div></li>
+            <li class="feature-row"><span class="icon-tile"><i data-lucide="messages-square" class="h-5 w-5"></i></span><div><h3>Transparent communication</h3><p>Clear updates on options, visits and next steps.</p></div></li>
+            <li class="feature-row"><span class="icon-tile"><i data-lucide="map" class="h-5 w-5"></i></span><div><h3>Local market knowledge</h3><p>Focused on Pune, Wakad, Tathawade, Hinjawadi and Punawale.</p></div></li>
+          </ul>
+          <div class="about-actions"><a href="about.html" class="btn btn-primary">More about me <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="sec sec-alt">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Projects</span><h2 class="sec-title">Featured properties</h2><p class="sec-sub">Selected options based on location, budget and lifestyle.</p></div>
+        <a href="projects.html" class="btn btn-outline">View all projects <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+      </div>
+        <div class="prop-grid">
+          <article class="prop-card" data-purpose="buy" data-type="apartment" data-location="wakad" data-budget="75-100" data-reveal>
+            <div class="prop-media">
+            <img src="assets/photo-4.jpg" alt="Bright apartment living room with sofa and large window" width="900" height="675" loading="lazy">
+            <span class="tag">Ready to move</span>
+            <button type="button" class="fav" data-id="p0" aria-label="Save 3 BHK apartment, Wakad" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹85 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Wakad, Pune</p>
+            <h3 class="prop-title">3 BHK apartment</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>3 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>3 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>1,150 sq ft</li></ul>
+            <a href="contact.html?property=3%20BHK%20apartment,%20Wakad&amp;interest=Buy&amp;location=Wakad#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="apartment" data-location="tathawade" data-budget="50-75" data-reveal data-delay="1">
+            <div class="prop-media">
+            <img src="assets/photo-3.jpg" alt="Cosy apartment interior with wooden floor and natural light" width="900" height="675" loading="lazy">
+            <span class="tag tag-brass">New launch</span>
+            <button type="button" class="fav" data-id="p1" aria-label="Save 2 BHK apartment, Tathawade" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹68 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Tathawade, Pune</p>
+            <h3 class="prop-title">2 BHK apartment</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>2 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>2 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>880 sq ft</li></ul>
+            <a href="contact.html?property=2%20BHK%20apartment,%20Tathawade&amp;interest=Buy&amp;location=Tathawade#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="villa" data-location="hinjawadi" data-budget="100+" data-reveal data-delay="2">
+            <div class="prop-media">
+            <img src="assets/photo-8.jpg" alt="Contemporary villa with a swimming pool in the garden" width="900" height="675" loading="lazy">
+            <span class="tag tag-brass">Premium</span>
+            <button type="button" class="fav" data-id="p2" aria-label="Save Row villa, Hinjawadi" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹1.4 Cr</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Hinjawadi, Pune</p>
+            <h3 class="prop-title">Row villa</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>4 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>4 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>2,200 sq ft</li></ul>
+            <a href="contact.html?property=Row%20villa,%20Hinjawadi&amp;interest=Buy&amp;location=Hinjawadi#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="sec">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Services</span><h2 class="sec-title">Property help for every stage</h2><p class="sec-sub">Buying your first home, selling an existing one or looking for a rental, you get the same personal attention.</p></div>
+        <a href="services.html" class="btn btn-outline">All services <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+      </div>
+        <div class="svc-grid cols-4">
+          <a href="contact.html" class="svc-card" data-reveal>
+            <span class="svc-icon"><i data-lucide="house" class="h-5 w-5"></i></span>
+            <h3>Buying a property</h3>
+            <p>Shortlists matched to your budget and area, site visits, and support through negotiation.</p>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="1">
+            <span class="svc-icon"><i data-lucide="tag" class="h-5 w-5"></i></span>
+            <h3>Selling a property</h3>
+            <p>Present your property well, reach genuine buyers and coordinate viewings.</p>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="2">
+            <span class="svc-icon"><i data-lucide="key-round" class="h-5 w-5"></i></span>
+            <h3>Renting a property</h3>
+            <p>Find a rental that suits your commute and lifestyle, as a tenant or an owner.</p>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+          <a href="contact.html" class="svc-card" data-reveal data-delay="3">
+            <span class="svc-icon"><i data-lucide="trending-up" class="h-5 w-5"></i></span>
+            <h3>Investment guidance</h3>
+            <p>Talk through locations and property types before you commit.</p>
+            <span class="svc-arrow" aria-hidden="true"><i data-lucide="arrow-up-right" class="h-4 w-4"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="sec sec-alt">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Process</span><h2 class="sec-title">How it works</h2><p class="sec-sub">A simple path from your first message to a decision you feel good about.</p></div>
+      </div>
+        <ol class="steps">
+          <li class="step" data-reveal><div class="step-top"><span class="step-ico"><i data-lucide="message-square-text" class="h-5 w-5"></i></span><span class="step-dot">1</span></div><h3>Share what you need</h3><p>Tell me your budget, preferred areas and the kind of property you want.</p></li>
+          <li class="step" data-reveal data-delay="1"><div class="step-top"><span class="step-ico"><i data-lucide="list-checks" class="h-5 w-5"></i></span><span class="step-dot">2</span></div><h3>Get a shortlist</h3><p>I select options that fit, so you compare a few good ones instead of dozens.</p></li>
+          <li class="step" data-reveal data-delay="2"><div class="step-top"><span class="step-ico"><i data-lucide="map-pinned" class="h-5 w-5"></i></span><span class="step-dot">3</span></div><h3>Visit the sites</h3><p>I coordinate visits at times that work for you and your family.</p></li>
+          <li class="step" data-reveal data-delay="3"><div class="step-top"><span class="step-ico"><i data-lucide="handshake" class="h-5 w-5"></i></span><span class="step-dot">4</span></div><h3>Negotiate and decide</h3><p>I support the negotiation so you can make the final call with confidence.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY ME ============ -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="why-panel" data-reveal="zoom">
+          <div class="why-head">
+            <div class="relative"><span class="eyebrow">Why me</span><h2 class="sec-title">Why people work with me</h2></div>
+            <p class="why-lead">Property decisions are big. You should know who you are dealing with and what happens next.</p>
+          </div>
+          <ul class="why-grid">
+            <li class="why-card" data-tilt data-reveal data-delay="0"><span class="why-ico"><i data-lucide="user-round-check" class="h-5 w-5"></i></span><h3>One point of contact</h3><p>Everything is handled by one person who knows your requirements.</p></li>
+            <li class="why-card" data-tilt data-reveal data-delay="1"><span class="why-ico"><i data-lucide="eye" class="h-5 w-5"></i></span><h3>Transparent communication</h3><p>Straightforward updates on every option and every step.</p></li>
+            <li class="why-card" data-tilt data-reveal data-delay="2"><span class="why-ico"><i data-lucide="map-pinned" class="h-5 w-5"></i></span><h3>Local market knowledge</h3><p>Familiar with the neighbourhoods around Wakad, Tathawade, Hinjawadi and Punawale.</p></li>
+            <li class="why-card" data-tilt data-reveal data-delay="3"><span class="why-ico"><i data-lucide="handshake" class="h-5 w-5"></i></span><h3>Support through negotiation</h3><p>Help in the conversations that decide the final terms.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="sec sec-alt">
+      <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <div><span class="eyebrow">Reviews</span><h2 class="sec-title">What clients say</h2></div>
+      </div>
+        <div class="quote-grid">
+          <figure class="quote-card" data-reveal data-delay="0"><i data-lucide="quote" class="qmark"></i><blockquote>Sample testimonial. Replace this with a real client review about how the buying process went.</blockquote><figcaption><span class="avatar">C</span><span><strong>Client name</strong>Bought a 3 BHK in Wakad</span></figcaption></figure>
+          <figure class="quote-card" data-reveal data-delay="1"><i data-lucide="quote" class="qmark"></i><blockquote>Sample testimonial. Short, specific reviews work best: what the client needed and what happened.</blockquote><figcaption><span class="avatar">C</span><span><strong>Client name</strong>Rented in Hinjawadi</span></figcaption></figure>
+          <figure class="quote-card" data-reveal data-delay="2"><i data-lucide="quote" class="qmark"></i><blockquote>Sample testimonial. Add a photo or initials, the area and the type of property if the client agrees.</blockquote><figcaption><span class="avatar">C</span><span><strong>Client name</strong>Sold a flat in Tathawade</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="sec cta-sec">
+      <div class="wrap">
+        <div class="cta-band" data-reveal="zoom">
+          <div class="cta-text">
+            <h2>Ready to find your next property?</h2>
+            <p>Send a message on WhatsApp and get a reply with options that fit your budget and area.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" data-whatsapp class="btn btn-wa btn-lg"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> Chat on WhatsApp</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg"><i data-lucide="send" class="h-4 w-4"></i> Send an enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap f-grid">
+      <div class="f-col f-brand">
+        <a href="index.html" class="f-logo"><span class="f-logo-mark"><i data-lucide="house" class="h-5 w-5"></i></span><span>Nivaas Property Advisors</span></a>
+        <p>Personal property guidance for buying, selling and renting in Pune and nearby areas.</p>
+      </div>
+      <nav class="f-col" aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="f-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i data-lucide="phone"></i><a href="tel:+910000000000" class="footer-link">+91 00000 00000</a></li>
+          <li><i data-lucide="message-circle"></i><a href="contact.html" data-whatsapp class="footer-link">WhatsApp</a></li>
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com" class="footer-link">hello@example.com</a></li>
+          <li><i data-lucide="map-pin"></i><span>Pune, Maharashtra</span></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h3>Follow</h3>
+        <ul class="f-social">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Instagram"><i data-lucide="instagram" class="h-5 w-5"></i></a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Facebook"><i data-lucide="facebook" class="h-5 w-5"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn"><i data-lucide="linkedin" class="h-5 w-5"></i></a></li>
+        </ul>
+        <!-- TODO: replace the three social links with real profile URLs -->
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap"><span>&copy; <span class="js-year">2026</span> Nivaas Property Advisors. All rights reserved.</span><span>Pune, Maharashtra</span></div>
+    </div>
+  </footer>
+
+  <a href="contact.html" data-whatsapp class="fab-wa" aria-label="Chat on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg></a>
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

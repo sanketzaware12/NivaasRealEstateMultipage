@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Contact | Nivaas Property Advisors</title>
+  <meta name="description" content="Talk to a Pune property consultant on WhatsApp, phone or email.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (fine for a template/prototype; see README for a production build) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-mist font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+    <span class="scroll-progress" aria-hidden="true"></span>
+    <nav class="mx-auto flex h-[64px] max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Nivaas Property Advisors, home">
+        <span class="brand-mark flex h-10 w-10 items-center justify-center rounded-xl bg-pine text-white"><i data-lucide="house" class="h-5 w-5"></i></span>
+        <span class="font-display text-lg font-semibold leading-none tracking-tight">Nivaas
+          <span class="block pt-1 text-[11px] font-medium tracking-wide text-ink/60">Property Advisors</span>
+        </span>
+      </a>
+      <ul class="hidden items-center gap-1 lg:flex">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" data-whatsapp class="btn btn-wa hidden sm:inline-flex"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a>
+        <button id="menu-toggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-white lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="icon-open h-5 w-5"></i>
+          <i data-lucide="x" class="icon-close hidden h-5 w-5"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu lg:hidden" data-open="false" hidden>
+      <ul class="mx-auto max-w-7xl space-y-1 px-5 pb-5 pt-1 sm:px-8">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link">Services</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="contact.html" class="mobile-link" aria-current="page">Contact</a></li>
+        <li class="pt-3"><a href="contact.html" data-whatsapp class="btn btn-wa btn-lg w-full"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="wrap banner-inner">
+        <nav class="crumbs hero-in hero-d1" aria-label="Breadcrumb"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span aria-current="page">Contact</span></nav>
+        <h1 id="page-title" class="hero-in hero-d2">Looking for the right property?</h1>
+        <p class="hero-in hero-d3">Let's discuss what you are looking for. Send an enquiry or message me on WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="sec sec-flush-bottom">
+      <div class="wrap">
+        <div class="info-grid">
+          <div class="ccard" data-reveal data-delay="0"><span class="ccard-ico"><i data-lucide="phone" class="h-5 w-5"></i></span><div><small>Phone</small><a href="tel:+910000000000">+91 00000 00000</a></div></div>
+          <div class="ccard" data-reveal data-delay="1"><span class="ccard-ico"><i data-lucide="message-circle" class="h-5 w-5"></i></span><div><small>WhatsApp</small><a href="contact.html" data-whatsapp>+91 00000 00000</a></div></div>
+          <div class="ccard" data-reveal data-delay="2"><span class="ccard-ico"><i data-lucide="mail" class="h-5 w-5"></i></span><div><small>Email</small><a href="mailto:hello@example.com">hello@example.com</a></div></div>
+          <div class="ccard" data-reveal data-delay="3"><span class="ccard-ico"><i data-lucide="map-pin" class="h-5 w-5"></i></span><div><small>Service area</small><p>Pune, Wakad, Tathawade, Hinjawadi, Punawale</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry" class="sec">
+      <div class="wrap contact-grid">
+        <form id="contact-form" class="contact-form" novalidate data-reveal="left">
+          <h2>Send an enquiry</h2>
+          <p>Your message opens in WhatsApp so you can send it straight to me.</p>
+          <div class="form-grid">
+            <div><label for="c-name" class="field-label">Name</label><input id="c-name" name="name" type="text" autocomplete="name" class="field" required aria-describedby="c-name-err"><p id="c-name-err" class="field-error" role="alert"></p></div>
+            <div><label for="c-phone" class="field-label">Phone number</label><input id="c-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" class="field" required aria-describedby="c-phone-err"><p id="c-phone-err" class="field-error" role="alert"></p></div>
+            <div class="span-2"><label for="c-email" class="field-label">Email <span style="font-weight:400;color:var(--dim)">(optional)</span></label><input id="c-email" name="email" type="email" autocomplete="email" class="field" aria-describedby="c-email-err"><p id="c-email-err" class="field-error" role="alert"></p></div>
+            <div><label for="c-interest" class="field-label">Interested in</label><select id="c-interest" name="interest" class="field"><option>Buy</option><option>Sell</option><option>Rent</option><option>Investment</option></select></div>
+            <div><label for="c-location" class="field-label">Preferred location</label><select id="c-location" name="location" class="field"><option>Pune</option><option>Wakad</option><option>Tathawade</option><option>Hinjawadi</option><option>Punawale</option></select></div>
+            <div class="span-2"><label for="c-budget" class="field-label">Budget</label><select id="c-budget" name="budget" class="field"><option>₹30L to ₹50L</option><option>₹50L to ₹75L</option><option>₹75L to ₹1Cr</option><option>₹1Cr and above</option></select></div>
+            <div class="span-2"><label for="c-message" class="field-label">Message</label><textarea id="c-message" name="message" rows="3" class="field"></textarea></div>
+          </div>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-primary btn-lg"><i data-lucide="send" class="h-4 w-4"></i> Send enquiry</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <aside class="contact-side" data-reveal="right">
+          <div class="side-faq">
+            <h2>Common questions</h2>
+            <p>Cannot find your answer? Ask me directly on WhatsApp.</p>
+            <div class="faq-list">
+<details class="faq"><summary>How do I book a site visit?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Send an enquiry or message me on WhatsApp with the projects you like. We will agree on a time that suits you.</p></details>
+<details class="faq"><summary>Which areas do you cover?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Pune, Wakad, Tathawade, Hinjawadi and Punawale.</p></details>
+<details class="faq"><summary>Can you help me sell or rent out my property?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Yes. Share the location and type of property on the contact page and I will get back to you with the next steps.</p></details>
+<details class="faq"><summary>Do you charge buyers or tenants?<i data-lucide="chevron-down" class="faq-chevron h-5 w-5"></i></summary><p>Add your own fee structure here. Being clear about fees early builds trust.</p></details>
+            </div>
+          </div>
+          <div class="map-frame">
+            <iframe title="Map of Wakad, Pune" src="https://www.google.com/maps?q=Wakad,Pune&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap f-grid">
+      <div class="f-col f-brand">
+        <a href="index.html" class="f-logo"><span class="f-logo-mark"><i data-lucide="house" class="h-5 w-5"></i></span><span>Nivaas Property Advisors</span></a>
+        <p>Personal property guidance for buying, selling and renting in Pune and nearby areas.</p>
+      </div>
+      <nav class="f-col" aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="f-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i data-lucide="phone"></i><a href="tel:+910000000000" class="footer-link">+91 00000 00000</a></li>
+          <li><i data-lucide="message-circle"></i><a href="contact.html" data-whatsapp class="footer-link">WhatsApp</a></li>
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com" class="footer-link">hello@example.com</a></li>
+          <li><i data-lucide="map-pin"></i><span>Pune, Maharashtra</span></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h3>Follow</h3>
+        <ul class="f-social">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Instagram"><i data-lucide="instagram" class="h-5 w-5"></i></a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Facebook"><i data-lucide="facebook" class="h-5 w-5"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn"><i data-lucide="linkedin" class="h-5 w-5"></i></a></li>
+        </ul>
+        <!-- TODO: replace the three social links with real profile URLs -->
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap"><span>&copy; <span class="js-year">2026</span> Nivaas Property Advisors. All rights reserved.</span><span>Pune, Maharashtra</span></div>
+    </div>
+  </footer>
+
+  <a href="contact.html" data-whatsapp class="fab-wa" aria-label="Chat on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg></a>
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Projects | Nivaas Property Advisors</title>
+  <meta name="description" content="Browse featured apartments, villas, plots and commercial spaces in Pune.">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind Play CDN (fine for a template/prototype; see README for a production build) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-mist font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50">
+    <span class="scroll-progress" aria-hidden="true"></span>
+    <nav class="mx-auto flex h-[64px] max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Nivaas Property Advisors, home">
+        <span class="brand-mark flex h-10 w-10 items-center justify-center rounded-xl bg-pine text-white"><i data-lucide="house" class="h-5 w-5"></i></span>
+        <span class="font-display text-lg font-semibold leading-none tracking-tight">Nivaas
+          <span class="block pt-1 text-[11px] font-medium tracking-wide text-ink/60">Property Advisors</span>
+        </span>
+      </a>
+      <ul class="hidden items-center gap-1 lg:flex">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link" aria-current="page">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" data-whatsapp class="btn btn-wa hidden sm:inline-flex"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a>
+        <button id="menu-toggle" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-ink/10 bg-white lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="icon-open h-5 w-5"></i>
+          <i data-lucide="x" class="icon-close hidden h-5 w-5"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu lg:hidden" data-open="false" hidden>
+      <ul class="mx-auto max-w-7xl space-y-1 px-5 pb-5 pt-1 sm:px-8">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="about.html" class="mobile-link">About</a></li>
+        <li><a href="services.html" class="mobile-link">Services</a></li>
+        <li><a href="projects.html" class="mobile-link" aria-current="page">Projects</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="pt-3"><a href="contact.html" data-whatsapp class="btn btn-wa btn-lg w-full"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> WhatsApp me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="wrap banner-inner">
+        <nav class="crumbs hero-in hero-d1" aria-label="Breadcrumb"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span aria-current="page">Projects</span></nav>
+        <h1 id="page-title" class="hero-in hero-d2">Featured properties</h1>
+        <p class="hero-in hero-d3">Browse sample listings and enquire about the ones you like.</p>
+      </div>
+    </section>
+
+    <section id="listings" class="sec">
+      <div class="wrap">
+        <div class="filter-bar" data-reveal>
+          <div class="pill-row" role="group" aria-label="Filter by purpose">
+            <button type="button" class="filter-pill is-active" data-filter="any" aria-pressed="true">All</button>
+            <button type="button" class="filter-pill" data-filter="buy" aria-pressed="false">Buy</button>
+            <button type="button" class="filter-pill" data-filter="rent" aria-pressed="false">Rent</button>
+            <button type="button" class="filter-pill" data-filter="sell" aria-pressed="false">Sell</button>
+          </div>
+          <div class="filter-selects">
+            <select id="f-type" class="field" aria-label="Property type"><option value="any">Any type</option><option value="apartment">Apartment</option><option value="villa">Villa</option><option value="plot">Plot</option><option value="commercial">Commercial</option></select>
+            <select id="f-location" class="field" aria-label="Location"><option value="any">Any location</option><option value="pune">Pune</option><option value="wakad">Wakad</option><option value="tathawade">Tathawade</option><option value="hinjawadi">Hinjawadi</option><option value="punawale">Punawale</option></select>
+            <select id="f-budget" class="field" aria-label="Budget"><option value="any">Any budget</option><option value="30-50">₹30L to ₹50L</option><option value="50-75">₹50L to ₹75L</option><option value="75-100">₹75L to ₹1Cr</option><option value="100+">₹1Cr and above</option></select>
+            <button type="button" id="reset-filters" class="btn btn-outline btn-reset"><i data-lucide="rotate-ccw" class="h-4 w-4"></i> Reset</button>
+          </div>
+        </div>
+
+        <p class="result-line" aria-live="polite"><span id="result-count"></span><span id="saved-count"></span></p>
+
+        <div id="property-grid" class="prop-grid">
+          <article class="prop-card" data-purpose="buy" data-type="apartment" data-location="wakad" data-budget="75-100" data-reveal>
+            <div class="prop-media">
+            <img src="assets/photo-4.jpg" alt="Bright apartment living room with sofa and large window" width="900" height="675" loading="lazy">
+            <span class="tag">Ready to move</span>
+            <button type="button" class="fav" data-id="p0" aria-label="Save 3 BHK apartment, Wakad" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹85 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Wakad, Pune</p>
+            <h3 class="prop-title">3 BHK apartment</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>3 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>3 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>1,150 sq ft</li></ul>
+            <a href="contact.html?property=3%20BHK%20apartment,%20Wakad&amp;interest=Buy&amp;location=Wakad#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="apartment" data-location="tathawade" data-budget="50-75" data-reveal data-delay="1">
+            <div class="prop-media">
+            <img src="assets/photo-3.jpg" alt="Cosy apartment interior with wooden floor and natural light" width="900" height="675" loading="lazy">
+            <span class="tag tag-brass">New launch</span>
+            <button type="button" class="fav" data-id="p1" aria-label="Save 2 BHK apartment, Tathawade" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹68 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Tathawade, Pune</p>
+            <h3 class="prop-title">2 BHK apartment</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>2 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>2 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>880 sq ft</li></ul>
+            <a href="contact.html?property=2%20BHK%20apartment,%20Tathawade&amp;interest=Buy&amp;location=Tathawade#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="villa" data-location="hinjawadi" data-budget="100+" data-reveal data-delay="2">
+            <div class="prop-media">
+            <img src="assets/photo-8.jpg" alt="Contemporary villa with a swimming pool in the garden" width="900" height="675" loading="lazy">
+            <span class="tag tag-brass">Premium</span>
+            <button type="button" class="fav" data-id="p2" aria-label="Save Row villa, Hinjawadi" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹1.4 Cr</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Hinjawadi, Pune</p>
+            <h3 class="prop-title">Row villa</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>4 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>4 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>2,200 sq ft</li></ul>
+            <a href="contact.html?property=Row%20villa,%20Hinjawadi&amp;interest=Buy&amp;location=Hinjawadi#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="plot" data-location="punawale" data-budget="30-50" data-reveal>
+            <div class="prop-media">
+            <img src="assets/photo-2.jpg" alt="Open green land parcel under a clear sky" width="900" height="675" loading="lazy">
+            <span class="tag">Plot</span>
+            <button type="button" class="fav" data-id="p3" aria-label="Save Residential plot, Punawale" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹45 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Punawale, Pune</p>
+            <h3 class="prop-title">Residential plot</h3>
+            <ul class="prop-specs"><li><i data-lucide="ruler" class="h-4 w-4"></i>1,500 sq ft</li><li><i data-lucide="trees" class="h-4 w-4"></i>Open plot</li></ul>
+            <a href="contact.html?property=Residential%20plot,%20Punawale&amp;interest=Buy&amp;location=Punawale#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="commercial" data-location="hinjawadi" data-budget="75-100" data-reveal data-delay="1">
+            <div class="prop-media">
+            <img src="assets/photo-1.jpg" alt="Glass-fronted commercial office building" width="900" height="675" loading="lazy">
+            <span class="tag">Commercial</span>
+            <button type="button" class="fav" data-id="p4" aria-label="Save Office space, Hinjawadi" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹90 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Hinjawadi, Pune</p>
+            <h3 class="prop-title">Office space</h3>
+            <ul class="prop-specs"><li><i data-lucide="ruler" class="h-4 w-4"></i>720 sq ft</li><li><i data-lucide="building-2" class="h-4 w-4"></i>Commercial</li></ul>
+            <a href="contact.html?property=Office%20space,%20Hinjawadi&amp;interest=Buy&amp;location=Hinjawadi#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="rent" data-type="apartment" data-location="wakad" data-budget="any" data-reveal data-delay="2">
+            <div class="prop-media">
+            <img src="assets/photo-5.jpg" alt="Furnished apartment with a bedroom and tidy living area" width="900" height="675" loading="lazy">
+            <span class="tag">For rent</span>
+            <button type="button" class="fav" data-id="p5" aria-label="Save 2 BHK for rent, Wakad" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹28,000 / mo</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Wakad, Pune</p>
+            <h3 class="prop-title">2 BHK for rent</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>2 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>2 baths</li><li><i data-lucide="key-round" class="h-4 w-4"></i>Furnished</li></ul>
+            <a href="contact.html?property=2%20BHK%20for%20rent,%20Wakad&amp;interest=Rent&amp;location=Wakad#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="apartment" data-location="punawale" data-budget="50-75" data-reveal>
+            <div class="prop-media">
+            <img src="assets/photo-6.jpg" alt="Detached home with a landscaped front garden" width="900" height="675" loading="lazy">
+            <span class="tag">Garden facing</span>
+            <button type="button" class="fav" data-id="p6" aria-label="Save 2.5 BHK apartment, Punawale" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹72 L</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Punawale, Pune</p>
+            <h3 class="prop-title">2.5 BHK apartment</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>2 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>2 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>960 sq ft</li></ul>
+            <a href="contact.html?property=2.5%20BHK%20apartment,%20Punawale&amp;interest=Buy&amp;location=Punawale#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="rent" data-type="apartment" data-location="tathawade" data-budget="any" data-reveal data-delay="1">
+            <div class="prop-media">
+            <img src="assets/photo-3.jpg" alt="Cosy apartment interior with wooden floor and natural light" width="900" height="675" loading="lazy">
+            <span class="tag">For rent</span>
+            <button type="button" class="fav" data-id="p7" aria-label="Save 1 BHK for rent, Tathawade" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹22,000 / mo</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Tathawade, Pune</p>
+            <h3 class="prop-title">1 BHK for rent</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>1 bed</li><li><i data-lucide="bath" class="h-4 w-4"></i>1 bath</li><li><i data-lucide="key-round" class="h-4 w-4"></i>Semi-furnished</li></ul>
+            <a href="contact.html?property=1%20BHK%20for%20rent,%20Tathawade&amp;interest=Rent&amp;location=Tathawade#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+          <article class="prop-card" data-purpose="buy" data-type="villa" data-location="wakad" data-budget="100+" data-reveal data-delay="2">
+            <div class="prop-media">
+            <img src="assets/photo-7.jpg" alt="Modern residential house with large windows at dusk" width="900" height="675" loading="lazy">
+            <span class="tag tag-brass">Premium</span>
+            <button type="button" class="fav" data-id="p8" aria-label="Save Independent bungalow, Wakad" aria-pressed="false"><i data-lucide="heart" class="h-5 w-5"></i></button>
+            <span class="prop-reveal"><span>View and enquire</span><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+            <span class="price-badge">₹1.9 Cr</span>
+            </div>
+            <div class="prop-body">
+            <p class="meta-loc"><i data-lucide="map-pin" class="h-4 w-4"></i>Wakad, Pune</p>
+            <h3 class="prop-title">Independent bungalow</h3>
+            <ul class="prop-specs"><li><i data-lucide="bed-double" class="h-4 w-4"></i>4 beds</li><li><i data-lucide="bath" class="h-4 w-4"></i>5 baths</li><li><i data-lucide="ruler" class="h-4 w-4"></i>2,800 sq ft</li></ul>
+            <a href="contact.html?property=Independent%20bungalow,%20Wakad&amp;interest=Buy&amp;location=Wakad#enquiry" class="prop-link">Enquire <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div id="empty-state" class="empty-state hidden" role="status">
+          <span class="icon-tile"><i data-lucide="search-x" class="h-5 w-5"></i></span>
+          <h3 id="empty-title">No matching projects yet</h3>
+          <p id="empty-text">Try a different combination, or tell me what you need and I will look for it.</p>
+          <a href="contact.html" class="btn btn-primary">Send an enquiry</a>
+        </div>
+        <!-- Listings above are sample placeholders. Replace images, prices and details with real inventory. -->
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="sec cta-sec">
+      <div class="wrap">
+        <div class="cta-band" data-reveal="zoom">
+          <div class="cta-text">
+            <h2>Ready to find your next property?</h2>
+            <p>Send a message on WhatsApp and get a reply with options that fit your budget and area.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" data-whatsapp class="btn btn-wa btn-lg"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg> Chat on WhatsApp</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg"><i data-lucide="send" class="h-4 w-4"></i> Send an enquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap f-grid">
+      <div class="f-col f-brand">
+        <a href="index.html" class="f-logo"><span class="f-logo-mark"><i data-lucide="house" class="h-5 w-5"></i></span><span>Nivaas Property Advisors</span></a>
+        <p>Personal property guidance for buying, selling and renting in Pune and nearby areas.</p>
+      </div>
+      <nav class="f-col" aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="f-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><i data-lucide="phone"></i><a href="tel:+910000000000" class="footer-link">+91 00000 00000</a></li>
+          <li><i data-lucide="message-circle"></i><a href="contact.html" data-whatsapp class="footer-link">WhatsApp</a></li>
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com" class="footer-link">hello@example.com</a></li>
+          <li><i data-lucide="map-pin"></i><span>Pune, Maharashtra</span></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h3>Follow</h3>
+        <ul class="f-social">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Instagram"><i data-lucide="instagram" class="h-5 w-5"></i></a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="Facebook"><i data-lucide="facebook" class="h-5 w-5"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn"><i data-lucide="linkedin" class="h-5 w-5"></i></a></li>
+        </ul>
+        <!-- TODO: replace the three social links with real profile URLs -->
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="wrap"><span>&copy; <span class="js-year">2026</span> Nivaas Property Advisors. All rights reserved.</span><span>Pune, Maharashtra</span></div>
+    </div>
+  </footer>
+
+  <a href="contact.html" data-whatsapp class="fab-wa" aria-label="Chat on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.6-4c-.4-.5-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.5z"/></svg></a>
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
