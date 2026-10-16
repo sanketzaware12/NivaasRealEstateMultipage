@@ -467,6 +467,7 @@ textarea.field { resize: vertical; }
 /* ---------- Footer ---------- */
 .site-footer { margin-top: 8px; background: #090a0c; color: #bdb7ad; border-top: 1px solid var(--line); }
 .f-grid { display: grid; gap: 28px 32px; padding-block: 36px 30px; grid-template-columns: 1fr; }
+@media (max-width: 639px) { .f-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; } .f-grid > .f-brand, .f-grid > .f-col:last-child { grid-column: 1 / -1; } .f-col li { overflow-wrap: anywhere; } }
 @media (min-width: 640px) { .f-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .f-grid { grid-template-columns: 1.5fr 0.9fr 1.3fr 1fr; } }
 .f-col h3 { display: flex; align-items: center; min-height: 38px; margin-bottom: 8px; font-family: "Bricolage Grotesque", sans-serif; font-size: 1rem; font-weight: 600; color: #fff; }
